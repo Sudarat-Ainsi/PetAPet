@@ -7,6 +7,7 @@ public class FramePet extends JFrame {
     private JLabel statusLabel;
     public FramePet(){
         setFrame();
+        PanelManager PanelManager = new PanelManager(this);
     }
 
     public void setFrame() {
@@ -14,5 +15,7 @@ public class FramePet extends JFrame {
         setTitle("Pet A Pet");
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
+        setBackground(Color.CYAN);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }
